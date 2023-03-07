@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meal.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Meal section</title>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/c514fc42ed.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face /* to add external font from the computer*/ {
+                font-family: montserrat;
+                src: url(Montserrat/Montserrat-Regular.ttf);
+            }
+
+        @font-face {
+            font-family: mont-bold;
+            src: url(Montserrat/Montserrat-SemiBold.ttf);
+         }
+
+        *{
+            font-family: montserrat;
+        }
+    </style>
+</head>
+<body>
+<!-------------------------HTML for header-------------------->
+    <div class="header ">
+        <div class="wrapper wrapper--large">
+            <div class="header__container">
+                <a href="/en/" aria-label="Ireland.ie" class="header__logo-wrapper">           
+                  <img alt="Ireland Logo reverse white" class="header__logo desktop__logo" height="66" src="https://prod-ireland-ie-assets.s3.amazonaws.com/images/Ireland_logo_195x96.original.png" width="165">
+                </a>
+                <div class="header__menus header__menus--desktop">
+                    <div data-desktop-menu="">                     
+                      <nav aria-label="Primary navigation">
+                        <ul class="navmenu">
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link" onclick="gotoIndexSection()">Mainpage</a></li>
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link" onclick="gotoMealSection()">Savory</a></li>
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link" onclick="gotoWeatherSection()">Weather</a></li>
+                        </ul>
+                      </nav>
+                    </div> 
+                </div> 
+            </div>
+        </div>  
+      </div>
+<!-------------------------end HTML for header-------------------->
+
+<section class="showcase">
+    <video src="bgvid-meal.mp4" autoplay loop muted></video>
+        <div class="title"><p></p></div>
+</section>
+
+    <p1>Meal in Ireland</p1>
+    <br>
+    <div class="enter-meal">
+        <strong><label for="IrishMeal">Enter the meal you want to know about here :</label></strong>
+        <div class="select-btn">
+        <select name="type" id="meal" type="text" placeholder="Enter meal name" class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option value="Irish stew">Irish stew</option>
+            <option value="Coddled pork with cider">Coddled pork with cider</option>
+            <option value="Boxty Breakfast">Boxty Breakfast</option>
+            <option value="Mustard champ">Mustard champ</option>
+            <option value="Ham hock colcannon">Ham hock colcannon</option>
+        </select>
+        </div>
+      <br><br>
+      <button class="OfficialPageButt" onclick="getMeal()">SEARCH&nbsp&nbsp<i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+      <br><br>
+    </div>
+      <img id="meal-pic">
+      <p id="mealdata"></p>
+      <br><br>
+</body>
+</html>

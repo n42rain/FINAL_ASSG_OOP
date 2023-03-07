@@ -1,0 +1,157 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif;
+    margin: auto;
+    max-width: 38rem;
+    padding: 2rem;
+  }
+/* CSS header */
+
+.header {
+    z-index: 50;
+    background-color: #004d44;
+    position: absolute;
+    left: 0em;
+    top: 0;
+    width: 100%;
+    height: 15%;
+  }
+  
+  .header__logo{
+    position: absolute;
+    left: 2em;
+    top: 1em;
+  }
+  
+  .header nav{
+    width: 33%;
+    height: auto;
+    position: absolute;
+    top: 2.2em;
+    left: 54em;
+    padding: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 0%;
+  }
+  
+  .header nav ul li a{
+    text-decoration: none;
+    color: honeydew;
+    font-size: 20px;
+    font-family: montserrat;
+  }
+  
+  .header ul li:not(:last-child){
+    border-right: 2px solid white;
+  }
+  
+  .header ul li a{
+    padding: 4px 20px;
+  }
+  
+  .navmenu li:hover { /*hover animation settings*/
+    color: black;
+    transform: scale(1.2);
+    text-shadow: none;
+  }
+  
+/*  end CSS header */
+
+
+.showcase img{
+  height: 100%;
+  width: 100%;
+  /*filter:grayscale(60%);*/
+  position: fixed;
+  left: 0;
+  object-fit: cover;
+  z-index: -100;
+}
+
+.title-stud{
+  /*width: 100%;
+  height: 100%;*/
+  background-color:rgb(111, 107, 105);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  mix-blend-mode: multiply;
+  z-index: -100;
+}
+
+.stud{
+  height: 0.2em;
+  font-size: 50px;
+  color: white;
+  font-family: 'Trebuchet MS';
+  padding: 0.5em 2.5em;
+  position: absolute;
+  top: 25%;
+  left: 22%;
+}
+
+.enter-meal{
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 36%;
+}
+
+.enter-meal label{
+  font-size: 1.25em;
+  color: white;
+}
+
+
+.select-btn{
+  position: relative;
+  top: 1.8em;
+}
+
+.OfficialPageButt{
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  color: whitesmoke;
+  transition: all 0.2s ease;
+  /*background: rgb(187, 175, 161);/*linear-gradient(15deg ,rgb(107, 74, 36), rgb(187, 126, 61));*/
+  background: none;
+  box-shadow: 0 0 0 0.1em whitesmoke;
+  cursor: url(cursor/coffee.png), auto !important;
+  font-family: montserrat;
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+}
+
+.OfficialPageButt:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 0px 10px white;
+}
+
+.weather-data{
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 15%;
+  top: 140%;
+  background-color: azure;
+  border-radius: 30px;
+  padding: 1em 2em;
+}
+
+
+

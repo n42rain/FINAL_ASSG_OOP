@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Weather</title>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/c514fc42ed.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face /* to add external font from the computer*/ {
+               font-family: montserrat;
+               src: url(Montserrat/Montserrat-Regular.ttf);
+           }
+
+        @font-face {
+           font-family: mont-bold;
+           src: url(Montserrat/Montserrat-SemiBold.ttf);
+        }
+
+       *{
+           font-family: montserrat;
+       }
+    </style>
+</head>
+<body>
+<!-------------------------HTML for header-------------------->
+<div class="header ">
+    <div class="wrapper wrapper--large">
+        <div class="header__container">
+            <a href="/en/" aria-label="Ireland.ie" class="header__logo-wrapper">           
+              <img alt="Ireland Logo reverse white" class="header__logo desktop__logo" height="66" src="https://prod-ireland-ie-assets.s3.amazonaws.com/images/Ireland_logo_195x96.original.png" width="165">
+            </a>
+            <div class="header__menus header__menus--desktop">
+                <div data-desktop-menu="">                     
+                  <nav aria-label="Primary navigation">
+                    <ul class="navmenu">
+                        <li class="primary-nav__item"><a href="#" class="primary-nav__link" onclick="gotoIndexSection()">Mainpage</a></li>
+                        <li class="primary-nav__item"><a href="#" class="primary-nav__link" onclick="gotoMealSection()">Savory</a></li>
+                        <li class="primary-nav__item"><a href="#" class="primary-nav__link" onclick="gotoWeatherSection()">Weather</a></li>
+                    </ul>
+                  </nav>
+                </div> 
+            </div> 
+        </div>
+    </div>  
+  </div>
+<!-------------------------end HTML for header-------------------->
+
+<section class="showcase">
+  <img class="stud-img" src="bgpic-weather.jpg">
+  <div class="title-stud"></div>
+  <h1 class="stud"><p>WEATHER FORECAST</p></h1>
+  <div class="enter-meal">
+    <strong><label for="IrishWeather">Enter the region you want to know here :</label></strong>
+    <div class="select-btn">
+    <select name="type" id="city" type="text" placeholder="Enter place name" class="form-select form-select-sm" aria-label=".form-select-sm example">
+      <option value="Dublin,IE">Dublin</option>
+      <option value="Galway">Galway</option>
+      <option value="Cork">Cork</option>
+      <option value="Waterford,IE">Waterford</option>
+      <option value="Drogheda">Drogheda</option>
+      <option value="Bray">Bray</option>
+      <option value="Naas">Naas</option>
+      <option value="Athlone">Athlone</option>
+      <option value="Carlow">Carlow</option>
+      <option value="Portlaoise">Portlaoise</option>
+    </select>
+    </div>
+  <br><br>
+  <button class="OfficialPageButt" onclick="getWeather()">FORECAST&nbsp&nbsp<i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+  <br><br>
+  <p id="weather"></p>
+</div>
+</section>
+    
+</body>
+</html>

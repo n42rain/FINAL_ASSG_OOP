@@ -1,0 +1,193 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif;
+    margin: auto;
+    max-width: 38rem;
+    padding: 2rem;
+  }
+/* CSS header */
+
+.header {
+    z-index: 50;
+    background-color: #004d44;
+    position: absolute;
+    left: 0em;
+    top: 0;
+    width: 100%;
+    height: 15%;
+  }
+  
+  .header__logo{
+    position: absolute;
+    left: 2em;
+    top: 1em;
+  }
+  
+  .header nav{
+    width: 33%;
+    height: auto;
+    position: absolute;
+    top: 2.2em;
+    left: 54em;
+    padding: 0% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 0%;
+  }
+  
+  .header nav ul li a{
+    text-decoration: none;
+    color: honeydew;
+    font-size: 20px;
+    font-family: montserrat;
+  }
+  
+  .header ul li:not(:last-child){
+    border-right: 2px solid white;
+  }
+  
+  .header ul li a{
+    padding: 4px 20px;
+  }
+  
+  .navmenu li:hover { /*hover animation settings*/
+    color: black;
+    transform: scale(1.2);
+    text-shadow: none;
+  }
+  
+  /*  end CSS header */
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    /*css to make sure video background is fullscreen*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+
+}
+
+.showcase video{
+    width: 100%;
+    height: 100%;
+    position: static;
+    object-fit: cover;
+}
+
+.title{
+    /*width: 100%;
+    height: 100%;*/
+    background-color:rgb(94,87,81);
+    /*font-size: 50px;*/
+    color: aliceblue;
+    mix-blend-mode: multiply;
+    font-family: spectral, sans-serif;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.enter-meal{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+}
+
+.enter-meal label{
+    font-size: 1.25em;
+    color: white;
+}
+
+
+.select-btn{
+    position: relative;
+    top: 1.8em;
+}
+
+
+.meal-name{
+    width: auto;
+    height: auto;
+    color: black;
+    z-index: 100;
+    position: absolute;
+    top: 83%;
+    left: 16%;
+}
+
+.meal-name h2{
+    font-family: mont-bold;
+}
+
+#meal-pic{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 80%;
+}
+
+.meal{
+    width: 45%;
+    height: 102.3%;
+    position: absolute;
+    top: 80%;
+    right: 3%;
+    background-color: aliceblue;
+    padding: 9em 0.5em;
+}
+
+.meal p{
+    font-size: 1.23em;
+}
+
+.OfficialPageButt{
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    color: whitesmoke;
+    transition: all 0.2s ease;
+    /*background: rgb(187, 175, 161);/*linear-gradient(15deg ,rgb(107, 74, 36), rgb(187, 126, 61));*/
+    background: none;
+    box-shadow: 0 0 0 0.1em whitesmoke;
+    cursor: url(cursor/coffee.png), auto !important;
+    font-family: montserrat;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 80%;
+    left: 28%;
+  }
+  
+  .OfficialPageButt:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 0px 10px white;
+  }
+
+.steps{
+    width: 94.8%;
+    height: auto;
+    position: absolute;
+    top: 190%;
+    right: 3%;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 1em 2em;
+    text-align: justify;
+}
